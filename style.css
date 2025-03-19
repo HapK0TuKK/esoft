@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB; /* Голубое небо */
+}
+
+.house {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #8B4513; /* Коричневый цвет для основания дома */
+}
+
+.roof {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #A0522D; /* Темно-коричневый цвет для крыши */
+    z-index: 5;
+}
+
+.chimney {
+    position: absolute;
+    top: -60px;
+    left: 150px;
+    width: 20px;
+    height: 50px;
+    background-color: #696969; /* Серый цвет для дымохода */
+    z-index: 4;
+}
+
+.window {
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    width: 50px;
+    height: 50px;
+    background-color: #ADD8E8; /* Голубой цвет для окна */
+    
+}
+
+.door {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    width: 40px;
+    height: 80px;
+    background-color: #A0522D; /* Темно-коричневый цвет для двери */
+}
+
+.handle {
+    position: absolute;
+    background-color: #000000;
+    top: 40px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
